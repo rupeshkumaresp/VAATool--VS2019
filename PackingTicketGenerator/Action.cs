@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using VAA.BusinessComponents;
 using VAA.CommonComponents;
@@ -43,9 +38,9 @@ namespace PackingTicketGenerator
                 return;
             }
 
-            OrderManagement _orderManagement = new OrderManagement();
+            OrderManagement orderManagement = new OrderManagement();
 
-            bool boxticketDataReady = _orderManagement.IsBoxTicketDataGenerated(Convert.ToInt64(txtBoxOrderId.Text));
+            bool boxticketDataReady = orderManagement.IsBoxTicketDataGenerated(Convert.ToInt64(txtBoxOrderId.Text));
 
             if (!boxticketDataReady)
             {
