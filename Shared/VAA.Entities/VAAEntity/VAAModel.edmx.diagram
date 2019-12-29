@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dd1a955772414aa99df5c1bca0001cc8" Name="Diagram1">
+        <EntityTypeShape EntityType="VAAModel.ELMAH_Error" Width="1.5" PointX="3.75" PointY="5.75" />
+        <EntityTypeShape EntityType="VAAModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="VAAModel.tApprovalStatuses" Width="1.5" PointX="3.75" PointY="22.875" />
+        <EntityTypeShape EntityType="VAAModel.tApprovers" Width="1.5" PointX="9" PointY="11.875" />
+        <EntityTypeShape EntityType="VAAModel.tBaseItems" Width="1.5" PointX="3" PointY="17.125" />
+        <EntityTypeShape EntityType="VAAModel.tBoxTicketData" Width="1.5" PointX="10.5" PointY="34.75" />
+        <EntityTypeShape EntityType="VAAModel.tBoxTicketTemplate" Width="1.5" PointX="12.75" PointY="35.75" />
+        <EntityTypeShape EntityType="VAAModel.tClass" Width="1.5" PointX="0.75" PointY="12.25" />
+        <EntityTypeShape EntityType="VAAModel.tClassMenuTypeMap" Width="1.5" PointX="6" PointY="18.125" />
+        <EntityTypeShape EntityType="VAAModel.tCycle" Width="1.5" PointX="3.75" PointY="25.375" />
+        <EntityTypeShape EntityType="VAAModel.tCycleWeek" Width="1.5" PointX="6" PointY="39.375" />
+        <EntityTypeShape EntityType="VAAModel.tFlightSchedule" Width="1.5" PointX="8.25" PointY="46.375" />
+        <EntityTypeShape EntityType="VAAModel.tInstances" Width="1.5" PointX="1.5" PointY="26.25" />
+        <EntityTypeShape EntityType="VAAModel.tLiveOrderDetails" Width="1.5" PointX="8.25" PointY="22.75" />
+        <EntityTypeShape EntityType="VAAModel.tLiveOrders" Width="1.5" PointX="6" PointY="35.625" />
+        <EntityTypeShape EntityType="VAAModel.tLocation" Width="1.5" PointX="3.75" PointY="30.25" />
+        <EntityTypeShape EntityType="VAAModel.tMenu" Width="1.5" PointX="6" PointY="21.375" />
+        <EntityTypeShape EntityType="VAAModel.tMenuApprovalStage" Width="1.5" PointX="8.25" PointY="26.875" />
+        <EntityTypeShape EntityType="VAAModel.tMenuForRoute" Width="1.5" PointX="11.25" PointY="26" />
+        <EntityTypeShape EntityType="VAAModel.tMenuHistory" Width="1.5" PointX="11.25" PointY="23" />
+        <EntityTypeShape EntityType="VAAModel.tMenuItem" Width="1.5" PointX="8.25" PointY="43.5" />
+        <EntityTypeShape EntityType="VAAModel.tMenuItemCategory" Width="1.5" PointX="0.75" PointY="21.375" />
+        <EntityTypeShape EntityType="VAAModel.tMenuLanguage" Width="1.5" PointX="3.75" PointY="14" />
+        <EntityTypeShape EntityType="VAAModel.tMenuTemplates" Width="1.5" PointX="8.25" PointY="19.125" />
+        <EntityTypeShape EntityType="VAAModel.tMenuType" Width="1.5" PointX="0.75" PointY="18" />
+        <EntityTypeShape EntityType="VAAModel.tNotification" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="VAAModel.tOrders" Width="1.5" PointX="8.25" PointY="35.25" />
+        <EntityTypeShape EntityType="VAAModel.tOrderStatus" Width="1.5" PointX="6" PointY="28.125" />
+        <EntityTypeShape EntityType="VAAModel.tPDFGenerationJobs" Width="1.5" PointX="9" PointY="16.375" />
+        <EntityTypeShape EntityType="VAAModel.tPDFGenerationTasks" Width="1.5" PointX="11.25" PointY="18.375" />
+        <EntityTypeShape EntityType="VAAModel.tPDFGenerationTasksPackingTicket" Width="1.5" PointX="13.75" PointY="25.875" />
+        <EntityTypeShape EntityType="VAAModel.tRegion" Width="1.5" PointX="3.75" PointY="33.125" />
+        <EntityTypeShape EntityType="VAAModel.tRouteDetails" Width="1.5" PointX="6" PointY="31.125" />
+        <EntityTypeShape EntityType="VAAModel.tSchedulerColors" Width="1.5" PointX="3.75" PointY="1.875" />
+        <EntityTypeShape EntityType="VAAModel.tSchedules" Width="1.5" PointX="6" PointY="1" />
+        <EntityTypeShape EntityType="VAAModel.tSeatConfiguration" Width="1.5" PointX="7.75" PointY="5.75" />
+        <EntityTypeShape EntityType="VAAModel.tTemplates" Width="1.5" PointX="6" PointY="13.625" />
+        <EntityTypeShape EntityType="VAAModel.tTemplatesPacking" Width="1.5" PointX="10.5" PointY="32" />
+        <EntityTypeShape EntityType="VAAModel.tUserPermissions" Width="1.5" PointX="3.75" PointY="10" />
+        <EntityTypeShape EntityType="VAAModel.tUsers" Width="1.5" PointX="1.5" PointY="4.5" />
+        <AssociationConnector Association="VAAModel.FK_tCampaignApprovalStatuses_tApprovalStatuses" />
+        <AssociationConnector Association="VAAModel.FK_tMenu_tApprovalStatuses" />
+        <AssociationConnector Association="VAAModel.FK_tApprovers_tClass" />
+        <AssociationConnector Association="VAAModel.FK_tApprovers_tLocation" />
+        <AssociationConnector Association="VAAModel.FK_tApprovers_tUsers" />
+        <AssociationConnector Association="VAAModel.FK_tApprovers_tUsers1" />
+        <AssociationConnector Association="VAAModel.FK_tApprovers_tUsers2" />
+        <AssociationConnector Association="VAAModel.FK_tBaseItems_tBaseItems" />
+        <AssociationConnector Association="VAAModel.FK_tBaseItems_tClass" />
+        <AssociationConnector Association="VAAModel.FK_tBaseItems_tMenuLanguage" />
+        <AssociationConnector Association="VAAModel.FK_tBaseItems_tMenuType" />
+        <AssociationConnector Association="VAAModel.FK_tBoxTicketData_tOrders" />
+        <AssociationConnector Association="VAAModel.FK_tBoxTicketTemplate_tBoxTicketData" />
+        <AssociationConnector Association="VAAModel.FK_tPDFGenerationTasksPackingTicket_tBoxTicketData" />
+        <AssociationConnector Association="VAAModel.FK_tBoxTicketTemplate_tTemplatesPacking" />
+        <AssociationConnector Association="VAAModel.FK_tClass_tUsers" />
+        <AssociationConnector Association="VAAModel.FK_tFlightClassMenuTypeMap_tFlightClass" />
+        <AssociationConnector Association="VAAModel.FK_tFlightClassMenuTypeMap_tMenuType" />
+        <AssociationConnector Association="VAAModel.FK_tCampaigns_tInstances" />
+        <AssociationConnector Association="VAAModel.FK_tCycleWeek_tCycle" />
+        <AssociationConnector Association="VAAModel.FK_tLiveOrders_tCycle" />
+        <AssociationConnector Association="VAAModel.FK_tMenu_Cycle" />
+        <AssociationConnector Association="VAAModel.FK_tFlightSchedule_tRouteDetails" />
+        <AssociationConnector Association="VAAModel.FK_tLiveOrderDetails_tLiveOrders" />
+        <AssociationConnector Association="VAAModel.FK_tLiveOrderDetails_tMenu" />
+        <AssociationConnector Association="VAAModel.FK_tLiveOrderDetails_tRouteDetails" />
+        <AssociationConnector Association="VAAModel.FK_tOrders_tLiveOrders" />
+        <AssociationConnector Association="VAAModel.FK_tRouteDetails_tLocationArrival" />
+        <AssociationConnector Association="VAAModel.FK_tRouteDetails_tLocationDep" />
+        <AssociationConnector Association="VAAModel.FK_MenuHistory_tMenu" />
+        <AssociationConnector Association="VAAModel.FK_tCampaignApprovalStatuses_tMenu" />
+        <AssociationConnector Association="VAAModel.FK_tMenu_tMenuLanguage" />
+        <AssociationConnector Association="VAAModel.FK_tMenu_tMenuType" />
+        <AssociationConnector Association="VAAModel.FK_tMenuForRoute_tMenu" />
+        <AssociationConnector Association="VAAModel.FK_tMenuItem_tMenu" />
+        <AssociationConnector Association="VAAModel.FK_tMenuTemplates_tMenu" />
+        <AssociationConnector Association="VAAModel.FK_tPDFGenerationTasks_tMenu" />
+        <AssociationConnector Association="VAAModel.FK_tCampaignApprovalStatuses_tUsers" />
+        <AssociationConnector Association="VAAModel.FK_tMenuForRoute_tRouteDetails" />
+        <AssociationConnector Association="VAAModel.FK_tMenuHistory_tUsers" />
+        <AssociationConnector Association="VAAModel.FK_tMenuItemCategory_tMenuLanguage" />
+        <AssociationConnector Association="VAAModel.FK_tTemplates_tMenuLanguage" />
+        <AssociationConnector Association="VAAModel.FK_RecordTemplates_Templates" />
+        <AssociationConnector Association="VAAModel.FK_tTemplates_tMenuType" />
+        <AssociationConnector Association="VAAModel.FK_tOrders_tOrderStatus" />
+        <AssociationConnector Association="VAAModel.FK_PDFGenerationTasks_PDFGenerationJobs" />
+        <AssociationConnector Association="VAAModel.FK_tPDFGenerationTasksPackingTicket_tPDFGenerationJobs" />
+        <AssociationConnector Association="VAAModel.FK_tPDFGenerationTasks_tTemplates" />
+        <AssociationConnector Association="VAAModel.FK_tRouteDetails_tRegion" />
+        <AssociationConnector Association="VAAModel.FK_tSchedules_tSchedulerColors" />
+        <AssociationConnector Association="VAAModel.FK_tUserPermissions_tUsers" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

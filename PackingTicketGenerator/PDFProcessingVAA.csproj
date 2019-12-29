@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PDFProcessingVAA</RootNamespace>
+    <AssemblyName>PDFProcessingVAA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.PDF, Version=19.12.0.0, Culture=neutral, PublicKeyToken=f0262d67fe233d63, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.PDF.19.12.0\lib\net4.0\Aspose.PDF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.1.2.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Action.Designer.cs">
+      <DependentUpon>Action.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFlightsToMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFlightsToMenu.Designer.cs">
+      <DependentUpon>AddFlightsToMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeFlightSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeFlightSchedule.Designer.cs">
+      <DependentUpon>ChangeFlightSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloneMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloneMenus.Designer.cs">
+      <DependentUpon>CloneMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValidateServicePlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidateServicePlan.Designer.cs">
+      <DependentUpon>frmValidateServicePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDFGeneration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDFGeneration.Designer.cs">
+      <DependentUpon>PDFGeneration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PDFGenerationByMenuCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDFGenerationByMenuCodes.Designer.cs">
+      <DependentUpon>PDFGenerationByMenuCodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMenuCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMenuCode.Designer.cs">
+      <DependentUpon>UpdateMenuCode.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Action.resx">
+      <DependentUpon>Action.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFlightsToMenu.resx">
+      <DependentUpon>AddFlightsToMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeFlightSchedule.resx">
+      <DependentUpon>ChangeFlightSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloneMenus.resx">
+      <DependentUpon>CloneMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValidateServicePlan.resx">
+      <DependentUpon>frmValidateServicePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDFGeneration.resx">
+      <DependentUpon>PDFGeneration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PDFGenerationByMenuCodes.resx">
+      <DependentUpon>PDFGenerationByMenuCodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMenuCode.resx">
+      <DependentUpon>UpdateMenuCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\VAA.BusinessComponents\VAA.BusinessComponents.csproj">
+      <Project>{3e89386b-8505-4050-83dd-0a575fc77721}</Project>
+      <Name>VAA.BusinessComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\VAA.DataAccess\VAA.DataAccess.csproj">
+      <Project>{747c097d-8660-47fe-935f-af4e0f3518b3}</Project>
+      <Name>VAA.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\OutputSpreadsheetWriterLibrary\OutputSpreadsheetWriterLibrary.csproj">
+      <Project>{673586d5-2f0c-4229-9e52-234884e84df7}</Project>
+      <Name>OutputSpreadsheetWriterLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\SpreadsheetReaderLibrary\VAA.SpreadsheetReaderLibrary.csproj">
+      <Project>{8da411f9-662f-43cd-8faa-10f79c532ea7}</Project>
+      <Name>VAA.SpreadsheetReaderLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\VAA.CommonComponents\VAA.CommonComponents.csproj">
+      <Project>{A22418FC-FAD0-445A-93B3-6B76E9B20D1A}</Project>
+      <Name>VAA.CommonComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\VAA.Entities\VAA.Entities.csproj">
+      <Project>{7ee5be7b-5a0b-4424-ae9b-8c8145c64133}</Project>
+      <Name>VAA.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

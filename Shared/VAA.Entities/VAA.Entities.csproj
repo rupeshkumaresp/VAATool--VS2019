@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VAA.Entities</RootNamespace>
+    <AssemblyName>VAA.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>..\..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VAAEntity\ELMAH_Error.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\sp_GetAll_tBaseItems_Result.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\sp_GetAll_tCycle_Result.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\sp_GetMenuAndApprovers_Result.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\sp_GetMenuAndRoute_Result.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\sp_GetMenuByUserId_Result.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\sysdiagrams.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tApprovalStatuses.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tApprovers.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tBaseItems.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tBoxTicketData.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tBoxTicketTemplate.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tClass.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tClassMenuTypeMap.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tCycle.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tCycleWeek.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tFlightSchedule.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tInstances.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tLiveOrderDetails.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tLiveOrders.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tLocation.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tMenu.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tMenuApprovalStage.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tMenuForRoute.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tMenuHistory.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tMenuItem.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tMenuItemCategory.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tMenuLanguage.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tMenuTemplates.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tMenuType.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tNotification.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tOrders.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tOrderStatus.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tPDFGenerationJobs.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tPDFGenerationTasks.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tPDFGenerationTasksPackingTicket.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tRegion.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tRouteDetails.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tSchedulerColors.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tSchedules.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tSeatConfiguration.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tTemplates.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tTemplatesPacking.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tUserPermissions.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\tUsers.cs">
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\VAAModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VAAModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\VAAModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VAAModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAAEntity\VAAModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VAAModel.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Web2PrintEntity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <EntityDeploy Include="VAAEntity\VAAModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VAAModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="VAAEntity\VAAModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VAAModel.edmx</DependentUpon>
+      <LastGenOutput>VAAModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="VAAEntity\VAAModel.edmx.diagram">
+      <DependentUpon>VAAModel.edmx</DependentUpon>
+    </None>
+    <None Include="VAAEntity\VAAModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VAAModel.edmx</DependentUpon>
+      <LastGenOutput>VAAModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Elmah.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

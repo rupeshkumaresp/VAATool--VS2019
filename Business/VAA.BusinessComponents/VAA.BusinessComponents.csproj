@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E89386B-8505-4050-83DD-0A575FC77721}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VAA.BusinessComponents</RootNamespace>
+    <AssemblyName>VAA.BusinessComponents</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.PDF">
+      <HintPath>..\..\packages\Aspose.PDF.19.12.0\lib\net4.0\Aspose.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.1.2.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditTrailGeneration.cs" />
+    <Compile Include="ChiliProcessor.cs" />
+    <Compile Include="FlightScheduleEngine.cs" />
+    <Compile Include="Interfaces\IFlightSchedule.cs" />
+    <Compile Include="Interfaces\IPackingTicket.cs" />
+    <Compile Include="Interfaces\IChiliProcessor.cs" />
+    <Compile Include="Interfaces\IMenuProcessor.cs" />
+    <Compile Include="Interfaces\ITemplateProcessor.cs" />
+    <Compile Include="MenuProcessor.cs" />
+    <Compile Include="NetworkConnection.cs" />
+    <Compile Include="PackingTicketProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ChiliWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="VAATemplateProcessor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\VAA.DataAccess\VAA.DataAccess.csproj">
+      <Project>{747c097d-8660-47fe-935f-af4e0f3518b3}</Project>
+      <Name>VAA.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\OutputSpreadsheetWriterLibrary\OutputSpreadsheetWriterLibrary.csproj">
+      <Project>{673586d5-2f0c-4229-9e52-234884e84df7}</Project>
+      <Name>OutputSpreadsheetWriterLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\VAA.CommonComponents\VAA.CommonComponents.csproj">
+      <Project>{a22418fc-fad0-445a-93b3-6b76e9b20d1a}</Project>
+      <Name>VAA.CommonComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\VAA.Entities\VAA.Entities.csproj">
+      <Project>{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}</Project>
+      <Name>VAA.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Service References\ChiliWebService\main.wsdl" />
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.AdsGetFromURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ApiKeyGetCurrentSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ApiKeyKeepAliveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.AssetGetImageInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.BarcodeCreateColoredResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.BarcodeCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.CsvFileCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DataSourceAddSampleFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DataSourceDeleteSampleFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DataSourceDownloadSpreadsheetsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DataSourceDownloadURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DataSourceFileGetXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DataSourceListSampleFilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DataSourceSalesForceGetXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DataSourceSpreadsheetGetXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCopyAnnotationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCopyDocumentEventActionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCopyVariableDefinitionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateFromBlankDocTemplateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateFromChiliPackageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateFromODTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateFromPDFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateHTMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateIDMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateImagesAndPDFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateImagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateODFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreatePackageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreatePDFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateTempFoldingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateTempHTMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateTempIDMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateTempImagesAndPDFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateTempImagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateTempODFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateTempPackageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentCreateTempPDFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetAnnotationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetDefaultSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetDocumentEventActionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetEditorURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetFoldingViewerURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetHTMLEditorURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetIpadXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetPlacedAdsAndEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetPreflightResultsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetThreeDModelViewerURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetUsedAssetsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetVariableDefinitionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentGetVariableValuesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentSetAnnotationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentSetAssetDirectoriesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentSetConstraintsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentSetDataSourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentSetDocumentEventActionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentSetVariableDefinitionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DocumentSetVariableValuesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DownloadURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.DynamicAssetProviderGetTempAssetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EditsGetFromURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentAddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentCopyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentDeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentGetColorProfilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentGetCurrentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentGetDiskUsageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentGetLoginSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentGetSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.EnvironmentSaveSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.FontGetIncludedGlyphsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.GenerateApiKeyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.GenerateApiKeyWithSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.GetServerDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.HealthCheckExecuteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.IconSetAddIconResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.IconSetDeleteIconResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.IconSetGetIconsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.InterfaceGetInitialSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.LanguageGetCombinedStringsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.LanguageGetCsvURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.LanguageGetUnicodeTextURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.LanguageImportCsvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.LanguageImportUnicodeTextResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.LanguageSaveStringsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.LanguagesGetListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.MobileFeedGetDocumentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.MobileFeedGetDocumentXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ODTGetStylesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ODTGetTextFlowResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ProfilingClearSnapshotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ProfilingSaveSnapshotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceFolderAddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceFolderCopyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceFolderDeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceFolderMoveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceGetHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceGetTreeLevelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceGetTreeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemAddFromURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemAddFromURLWithModificationDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemAddPreviewOverrideResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemAddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemAddWithPreviewResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemCopyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemDeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetByIdOrPathResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetByPathResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetCacheInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetCustomMetaDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetDefinitionXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetPrivateInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetTransformedURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetTransformedURLWithDebugInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetURLForAnonymousUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetURLWithDebugInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemGetXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemMoveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemRemovePreviewOverrideResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemReplaceFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemReplaceFileWithPreviewOverrideResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemResetPreviewsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemsAddFromZipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemSaveCustomMetaDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceItemSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceLibraryGetSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceLibrarySaveSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceSearchByIDsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceSearchInFolderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceSearchPagedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ResourceSearchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerDeleteAllSaveSystemFileInfosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerDeleteSavedSystemInfoXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerGetLicenseInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerGetLoggingSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerGetSavedSystemInfoListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerGetSavedSystemInfoXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerGetSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerGetSystemInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerLicenseRequestResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerLogClearResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerSaveLoggingSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerSaveSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.ServerSaveSystemInfoXMLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SetAssetDirectoriesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SetAutomaticPreviewGenerationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SetContentAdministrationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SetUserLanguageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SetWorkingEnvironmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SetWorkspaceAdministrationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SpellCheckDictionariesGetSystemListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SpellCheckDictionaryAddFromSystemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SpellCheckDictionaryAddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SpellCheckDictionaryReplaceFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SwitchServerFlowGetCheckPointsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SwitchServerFlowGetElementsJobCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SwitchServerFlowGetFullConfigResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SwitchServerFlowGetJobsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SwitchServerFlowGetSubmitPointsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SwitchServerFlowSubmitFileToFolderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SwitchServerFlowSubmitFileToSubmitPointResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SwitchServerGetFlowListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.SwitchServerTestConnectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.TaskGetEditorCliLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.TaskGetStatusAndRemoveIfCompletedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.TaskGetStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.TaskRemoveFromLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.TasksGetListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.TasksGetQueueOverviewResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.TasksGetStatussesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.UploadExternalAssetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.XinetExecutePortalDICallResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.XinetSetCurrentCredentialsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChiliWebService\VAA.BusinessComponents.ChiliWebService.XinetTestConnectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ChiliWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChiliWebService\main.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChiliWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChiliWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChiliWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Elmah.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

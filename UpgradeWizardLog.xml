@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\VAA.UI.csproj" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Account\ForgotPwd.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Account\ForgotPwd.aspx" />
+  <event action="Analyze" type="Success" name="ForgotPwd.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Account\ForgotPwd.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Account\Login.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Account\Login.aspx" />
+  <event action="Analyze" type="Success" name="Login.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Account\Login.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Add_BaseItem.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Add_BaseItem.aspx" />
+  <event action="Analyze" type="Success" name="Add_BaseItem.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Add_BaseItem.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\AddEdit_User.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\AddEdit_User.aspx" />
+  <event action="Analyze" type="Success" name="AddEdit_User.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\AddEdit_User.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\BaseItems.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\BaseItems.aspx" />
+  <event action="Analyze" type="Success" name="BaseItems.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\BaseItems.aspx" />
+  <event action="Analyze" type="Success" name="Binary References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\bin\" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\bin\VAA.UI.dll.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\bin\VAA.UI.dll.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\bin\VAA.UI.dll.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\bin\VAA.UI.dll.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\bin\VAA.UI.dll.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\bin\VAA.UI.dll.config" />
+  <event action="Analyze" type="Success" name="VAA.UI.dll.config" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\bin\VAA.UI.dll.config" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\BoxTicket.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\BoxTicket.aspx" />
+  <event action="Analyze" type="Success" name="BoxTicket.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\BoxTicket.aspx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Bundle.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Bundle.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Bundle.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Bundle.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Bundle.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Bundle.config" />
+  <event action="Analyze" type="Success" name="Bundle.config" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Bundle.config" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Default.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Default.aspx" />
+  <event action="Analyze" type="Success" name="Default.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Default.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\DeleteMenu.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\DeleteMenu.aspx" />
+  <event action="Analyze" type="Success" name="DeleteMenu.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\DeleteMenu.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Edit_Cycles.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Edit_Cycles.aspx" />
+  <event action="Analyze" type="Success" name="Edit_Cycles.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Edit_Cycles.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Generate.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Generate.aspx" />
+  <event action="Analyze" type="Success" name="Generate.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Generate.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\GenerateAudit.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\GenerateAudit.aspx" />
+  <event action="Analyze" type="Success" name="GenerateAudit.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\GenerateAudit.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Home.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Home.aspx" />
+  <event action="Analyze" type="Success" name="Home.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Home.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\LiveOrder.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\LiveOrder.aspx" />
+  <event action="Analyze" type="Success" name="LiveOrder.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\LiveOrder.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ManageApprovers.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ManageApprovers.aspx" />
+  <event action="Analyze" type="Success" name="ManageApprovers.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ManageApprovers.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ManageCycles.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ManageCycles.aspx" />
+  <event action="Analyze" type="Success" name="ManageCycles.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ManageCycles.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\MenuTranslation.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\MenuTranslation.aspx" />
+  <event action="Analyze" type="Success" name="MenuTranslation.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\MenuTranslation.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\MenuViewer.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\MenuViewer.aspx" />
+  <event action="Analyze" type="Success" name="MenuViewer.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\MenuViewer.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\MyAccounts.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\MyAccounts.aspx" />
+  <event action="Analyze" type="Success" name="MyAccounts.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\MyAccounts.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Orders.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Orders.aspx" />
+  <event action="Analyze" type="Success" name="Orders.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Orders.aspx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\packages.config" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\PrintRun.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\PrintRun.aspx" />
+  <event action="Analyze" type="Success" name="PrintRun.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\PrintRun.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\PrintStatus.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\PrintStatus.aspx" />
+  <event action="Analyze" type="Success" name="PrintStatus.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\PrintStatus.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\PrintStatusReport.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\PrintStatusReport.aspx" />
+  <event action="Analyze" type="Success" name="PrintStatusReport.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\PrintStatusReport.aspx" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Project_Readme.html" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Project_Readme.html" />
+  <event action="Analyze" type="Success" name="Project_Readme.html" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Project_Readme.html" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\RebuildMenu.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\RebuildMenu.aspx" />
+  <event action="Analyze" type="Success" name="RebuildMenu.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\RebuildMenu.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReOrder.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReOrder.aspx" />
+  <event action="Analyze" type="Success" name="ReOrder.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReOrder.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Report.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Report.aspx" />
+  <event action="Analyze" type="Success" name="Report.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Report.aspx" />
+  <event action="Analyze" type="Success" name="telerikReportViewer-9.1.15.624.css" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReportViewer\telerikReportViewer-9.1.15.624.css" />
+  <event action="Analyze" type="Success" name="telerikReportViewer-9.1.15.624.min.js" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReportViewer\telerikReportViewer-9.1.15.624.min.js" />
+  <event action="Analyze" type="Success" name="telerikReportViewerTemplate-9.1.15.624.html" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReportViewer\telerikReportViewerTemplate-9.1.15.624.html" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReportViewer\telerikReportViewerTemplate-9.1.15.624.html" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReportViewer\telerikReportViewerTemplate-9.1.15.624.html" />
+  <event action="Analyze" type="Success" name="telerikReportViewerTemplate-9.1.15.624.html" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReportViewer\telerikReportViewerTemplate-9.1.15.624.html" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ServicePlanValidator.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ServicePlanValidator.aspx" />
+  <event action="Analyze" type="Success" name="ServicePlanValidator.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ServicePlanValidator.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Site.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Site.Master" />
+  <event action="Analyze" type="Success" name="Site.Master" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Site.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Site.Mobile.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Site.Mobile.Master" />
+  <event action="Analyze" type="Success" name="Site.Mobile.Master" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Site.Mobile.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\UploadMenu.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\UploadMenu.aspx" />
+  <event action="Analyze" type="Success" name="UploadMenu.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\UploadMenu.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\UploadSchedules.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\UploadSchedules.aspx" />
+  <event action="Analyze" type="Success" name="UploadSchedules.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\UploadSchedules.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Users.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Users.aspx" />
+  <event action="Analyze" type="Success" name="Users.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Users.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ViewApprover.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ViewApprover.aspx" />
+  <event action="Analyze" type="Success" name="ViewApprover.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ViewApprover.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ViewSwitcher.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ViewSwitcher.ascx" />
+  <event action="Analyze" type="Success" name="ViewSwitcher.ascx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ViewSwitcher.ascx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Analyze" type="Success" name="Web.config" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Web.Debug.config" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Web.Release.config" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.Release.config" />
+  <event action="Analyze" type="Success" name="VAA.UI" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\VAA.UI.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\ReportLibrary\ReportLibrary.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="C:\Development\MergeIt\VAA\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="SeatConfiguration.resx" path="C:\Development\MergeIt\VAA\ReportLibrary\SeatConfiguration.resx" />
+  <event action="Analyze" type="Success" name="ReportLibrary" path="C:\Development\MergeIt\VAA\ReportLibrary\ReportLibrary.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\VAA.BusinessComponents.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\app.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\packages.config" />
+  <event action="Analyze" type="Success" name="VAA.BusinessComponents" path="C:\Development\MergeIt\VAA\Business\VAA.BusinessComponents\VAA.BusinessComponents.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\VAA.DataAccess.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\App.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\packages.config" />
+  <event action="Analyze" type="Success" name="VAA.DataAccess" path="C:\Development\MergeIt\VAA\Data\VAA.DataAccess\VAA.DataAccess.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\VAA.Entities.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\App.Config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\App.Config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\App.Config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\App.Config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\App.Config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\App.Config" />
+  <event action="Analyze" type="Success" name="App.Config" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\App.Config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\packages.config" />
+  <event action="Analyze" type="Success" name="VAA.Entities" path="C:\Development\MergeIt\VAA\Shared\VAA.Entities\VAA.Entities.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\VAA.CommonComponents.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\App.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\packages.config" />
+  <event action="Analyze" type="Success" name="VAA.CommonComponents" path="C:\Development\MergeIt\VAA\Shared\VAA.CommonComponents\VAA.CommonComponents.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\SpreadsheetReaderLibrary\VAA.SpreadsheetReaderLibrary.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\SpreadsheetReaderLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Shared\SpreadsheetReaderLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Shared\SpreadsheetReaderLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Shared\SpreadsheetReaderLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Shared\SpreadsheetReaderLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Shared\SpreadsheetReaderLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Development\MergeIt\VAA\Shared\SpreadsheetReaderLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="VAA.SpreadsheetReaderLibrary" path="C:\Development\MergeIt\VAA\Shared\SpreadsheetReaderLibrary\VAA.SpreadsheetReaderLibrary.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\OutputSpreadsheetWriterLibrary.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\App.Config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\App.Config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\App.Config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\App.Config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\App.Config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\App.Config" />
+  <event action="Analyze" type="Success" name="App.Config" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\App.Config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\packages.config" />
+  <event action="Analyze" type="Success" name="OutputSpreadsheetWriterLibrary" path="C:\Development\MergeIt\VAA\Shared\OutputSpreadsheetWriterLibrary\OutputSpreadsheetWriterLibrary.csproj" />
+  <event action="Analyze" type="Success" name="VAA" path="C:\Development\MergeIt\VAA\VAA.sln" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\VAA.UI.csproj" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Report.aspx" />
+  <event action="Upgrade" type="Success" name="Report.aspx" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Report.aspx" />
+  <event action="Upgrade" type="Success" name="telerikReportViewer-9.1.15.624.css" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReportViewer\telerikReportViewer-9.1.15.624.css" />
+  <event action="Upgrade" type="Success" name="telerikReportViewer-9.1.15.624.min.js" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReportViewer\telerikReportViewer-9.1.15.624.min.js" />
+  <event action="Upgrade" type="Success" name="telerikReportViewerTemplate-9.1.15.624.html" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\ReportViewer\telerikReportViewerTemplate-9.1.15.624.html" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Upgrade" type="Success" name="Http Handlers" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Upgrade" type="Success" name="Handlers (IIS7+)" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Upgrade" type="Success" name="Web.config" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\Web.config" />
+  <event action="Upgrade" type="Success" name="VAA.UI" path="C:\Development\MergeIt\VAA\Presentation\VAA.UI\VAA.UI\VAA.UI.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Development\MergeIt\VAA\ReportLibrary\ReportLibrary.csproj" />
+  <event action="Upgrade" type="Success" name="ReportLibrary" path="C:\Development\MergeIt\VAA\ReportLibrary\ReportLibrary.csproj" />
+  <event action="Upgrade" type="Success" name="VAA" path="C:\Development\MergeIt\VAA\VAA.sln" />
+</log>
