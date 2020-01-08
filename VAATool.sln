@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{48AC83AE-E49D-41FA-A328-5066C4F74AAE}"
 EndProject
@@ -34,73 +34,69 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFProcessingVAA", "PackingTicketGenerator\PDFProcessingVAA.csproj", "{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://thecolourhub.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Business\\VAA.BusinessComponents\\VAA.BusinessComponents.csproj
-		SccProjectTopLevelParentUniqueName1 = VAATool.sln
-		SccProjectName1 = Business/VAA.BusinessComponents
-		SccLocalPath1 = Business\\VAA.BusinessComponents
-		SccProjectUniqueName2 = Data\\VAA.DataAccess\\VAA.DataAccess.csproj
-		SccProjectTopLevelParentUniqueName2 = VAATool.sln
-		SccProjectName2 = Data/VAA.DataAccess
-		SccLocalPath2 = Data\\VAA.DataAccess
-		SccProjectUniqueName3 = PackingTicketGenerator\\PDFProcessingVAA.csproj
-		SccProjectTopLevelParentUniqueName3 = VAATool.sln
-		SccProjectName3 = PackingTicketGenerator
-		SccLocalPath3 = PackingTicketGenerator
-		SccProjectUniqueName4 = Shared\\OutputSpreadsheetWriterLibrary\\OutputSpreadsheetWriterLibrary.csproj
-		SccProjectTopLevelParentUniqueName4 = VAATool.sln
-		SccProjectName4 = Shared/OutputSpreadsheetWriterLibrary
-		SccLocalPath4 = Shared\\OutputSpreadsheetWriterLibrary
-		SccProjectUniqueName5 = Shared\\SpreadsheetReaderLibrary\\VAA.SpreadsheetReaderLibrary.csproj
-		SccProjectTopLevelParentUniqueName5 = VAATool.sln
-		SccProjectName5 = Shared/SpreadsheetReaderLibrary
-		SccLocalPath5 = Shared\\SpreadsheetReaderLibrary
-		SccProjectUniqueName6 = Shared\\VAA.CommonComponents\\VAA.CommonComponents.csproj
-		SccProjectTopLevelParentUniqueName6 = VAATool.sln
-		SccProjectName6 = Shared/VAA.CommonComponents
-		SccLocalPath6 = Shared\\VAA.CommonComponents
-		SccProjectUniqueName7 = Shared\\VAA.Entities\\VAA.Entities.csproj
-		SccProjectTopLevelParentUniqueName7 = VAATool.sln
-		SccProjectName7 = Shared/VAA.Entities
-		SccLocalPath7 = Shared\\VAA.Entities
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3E89386B-8505-4050-83DD-0A575FC77721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3E89386B-8505-4050-83DD-0A575FC77721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E89386B-8505-4050-83DD-0A575FC77721}.Debug|x64.ActiveCfg = Debug|x64
+		{3E89386B-8505-4050-83DD-0A575FC77721}.Debug|x64.Build.0 = Debug|x64
 		{3E89386B-8505-4050-83DD-0A575FC77721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E89386B-8505-4050-83DD-0A575FC77721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E89386B-8505-4050-83DD-0A575FC77721}.Release|x64.ActiveCfg = Release|x64
+		{3E89386B-8505-4050-83DD-0A575FC77721}.Release|x64.Build.0 = Release|x64
 		{747C097D-8660-47FE-935F-AF4E0F3518B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{747C097D-8660-47FE-935F-AF4E0F3518B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747C097D-8660-47FE-935F-AF4E0F3518B3}.Debug|x64.ActiveCfg = Debug|x64
+		{747C097D-8660-47FE-935F-AF4E0F3518B3}.Debug|x64.Build.0 = Debug|x64
 		{747C097D-8660-47FE-935F-AF4E0F3518B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{747C097D-8660-47FE-935F-AF4E0F3518B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747C097D-8660-47FE-935F-AF4E0F3518B3}.Release|x64.ActiveCfg = Release|x64
+		{747C097D-8660-47FE-935F-AF4E0F3518B3}.Release|x64.Build.0 = Release|x64
 		{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}.Debug|x64.ActiveCfg = Debug|x64
+		{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}.Debug|x64.Build.0 = Debug|x64
 		{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}.Release|x64.ActiveCfg = Release|x64
+		{7EE5BE7B-5A0B-4424-AE9B-8C8145C64133}.Release|x64.Build.0 = Release|x64
 		{A22418FC-FAD0-445A-93B3-6B76E9B20D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A22418FC-FAD0-445A-93B3-6B76E9B20D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22418FC-FAD0-445A-93B3-6B76E9B20D1A}.Debug|x64.ActiveCfg = Debug|x64
+		{A22418FC-FAD0-445A-93B3-6B76E9B20D1A}.Debug|x64.Build.0 = Debug|x64
 		{A22418FC-FAD0-445A-93B3-6B76E9B20D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A22418FC-FAD0-445A-93B3-6B76E9B20D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22418FC-FAD0-445A-93B3-6B76E9B20D1A}.Release|x64.ActiveCfg = Release|x64
+		{A22418FC-FAD0-445A-93B3-6B76E9B20D1A}.Release|x64.Build.0 = Release|x64
 		{8DA411F9-662F-43CD-8FAA-10F79C532EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8DA411F9-662F-43CD-8FAA-10F79C532EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA411F9-662F-43CD-8FAA-10F79C532EA7}.Debug|x64.ActiveCfg = Debug|x64
+		{8DA411F9-662F-43CD-8FAA-10F79C532EA7}.Debug|x64.Build.0 = Debug|x64
 		{8DA411F9-662F-43CD-8FAA-10F79C532EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DA411F9-662F-43CD-8FAA-10F79C532EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA411F9-662F-43CD-8FAA-10F79C532EA7}.Release|x64.ActiveCfg = Release|x64
+		{8DA411F9-662F-43CD-8FAA-10F79C532EA7}.Release|x64.Build.0 = Release|x64
 		{673586D5-2F0C-4229-9E52-234884E84DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{673586D5-2F0C-4229-9E52-234884E84DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673586D5-2F0C-4229-9E52-234884E84DF7}.Debug|x64.ActiveCfg = Debug|x64
+		{673586D5-2F0C-4229-9E52-234884E84DF7}.Debug|x64.Build.0 = Debug|x64
 		{673586D5-2F0C-4229-9E52-234884E84DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{673586D5-2F0C-4229-9E52-234884E84DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673586D5-2F0C-4229-9E52-234884E84DF7}.Release|x64.ActiveCfg = Release|x64
+		{673586D5-2F0C-4229-9E52-234884E84DF7}.Release|x64.Build.0 = Release|x64
 		{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}.Debug|x64.ActiveCfg = Debug|x64
+		{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}.Debug|x64.Build.0 = Debug|x64
 		{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}.Release|x64.ActiveCfg = Release|x64
+		{0D4F0351-40C7-4FBF-BB77-79382F83A9AE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,5 +109,8 @@ Global
 		{8DA411F9-662F-43CD-8FAA-10F79C532EA7} = {022C10A3-EDF2-4A56-97AD-7B1BEB394A01}
 		{673586D5-2F0C-4229-9E52-234884E84DF7} = {022C10A3-EDF2-4A56-97AD-7B1BEB394A01}
 		{0D4F0351-40C7-4FBF-BB77-79382F83A9AE} = {48AC83AE-E49D-41FA-A328-5066C4F74AAE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2832D38-8422-4700-9B0A-385911552170}
 	EndGlobalSection
 EndGlobal

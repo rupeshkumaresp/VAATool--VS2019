@@ -27,22 +27,22 @@ namespace PDFProcessingVAA
             if (string.IsNullOrEmpty(richTextBoxMenucodes.Text))
                 return;
 
-              var menuCode = richTextBoxMenucodes.Text;
+            var menuCode = richTextBoxMenucodes.Text;
 
-                var codes = menuCode.Split(new char[] { ',' });
+            var codes = menuCode.Split(new char[] { ',' });
 
-                for (int i = 0; i < codes.Length; i++)
-                {
-                    if (string.IsNullOrEmpty(codes[i]))
-                        continue;
+            for (int i = 0; i < codes.Length; i++)
+            {
+                if (string.IsNullOrEmpty(codes[i]))
+                    continue;
 
-                    var menudata = _menuManagement.GetMenuByMenuCode(codes[i].Trim());
+                var menudata = _menuManagement.GetMenuByMenuCode(codes[i].Trim());
 
-                    _menuProcessor.RebuildFlightNumberLotNumberChiliVariableForMenu(menudata.Id);
-                }
+                _menuProcessor.RebuildFlightNumberLotNumberChiliVariableForMenu(menudata.Id);
+            }
 
             MessageBox.Show("Menucode in chili document has been updated successfully");
-     
+
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
