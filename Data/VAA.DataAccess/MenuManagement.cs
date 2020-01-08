@@ -1052,6 +1052,9 @@ namespace VAA.DataAccess
         {
             foreach (var oldMenu in oldMenus)
             {
+                if (oldMenu == null)
+                    continue;
+
                 //create menu
                 var oldMenuId = oldMenu.ID;
 
