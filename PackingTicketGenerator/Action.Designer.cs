@@ -133,7 +133,7 @@
             this.btnView.ForeColor = System.Drawing.Color.Black;
             this.btnView.Location = new System.Drawing.Point(368, 38);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(144, 23);
+            this.btnView.Size = new System.Drawing.Size(144, 27);
             this.btnView.TabIndex = 7;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = false;

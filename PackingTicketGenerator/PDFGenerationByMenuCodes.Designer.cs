@@ -32,6 +32,7 @@
             this.richTextBoxMenucodes = new System.Windows.Forms.RichTextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.lblHeader = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblMenucodes
@@ -70,11 +71,24 @@
             this.lblHeader.TabIndex = 3;
             this.lblHeader.Text = "Please enter comma separated menu codes for PDF generation:";
             // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.Color.Green;
+            this.lblStatus.Location = new System.Drawing.Point(113, 358);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(159, 13);
+            this.lblStatus.TabIndex = 9;
+            this.lblStatus.Text = "In Progress, Please Wait...";
+            this.lblStatus.Visible = false;
+            // 
             // PDFGenerationByMenuCodes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(522, 391);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.richTextBoxMenucodes);
@@ -94,5 +108,6 @@
         private System.Windows.Forms.RichTextBox richTextBoxMenucodes;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label lblHeader;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
