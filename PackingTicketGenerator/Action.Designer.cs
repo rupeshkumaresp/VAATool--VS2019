@@ -40,10 +40,10 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.grpBoxVAA = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnValidateSP = new System.Windows.Forms.Button();
             this.btnCloneMenusToNewCycle = new System.Windows.Forms.Button();
             this.btnGenerateUnOrderMenuPDFs = new System.Windows.Forms.Button();
             this.btnUpdateMenuCode = new System.Windows.Forms.Button();
-            this.BtnValidateSP = new System.Windows.Forms.Button();
             this.btnFlightSchedule = new System.Windows.Forms.Button();
             this.grpBoxVAA.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -193,6 +193,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(514, 449);
             this.tableLayoutPanel1.TabIndex = 13;
             // 
+            // BtnValidateSP
+            // 
+            this.BtnValidateSP.Location = new System.Drawing.Point(3, 3);
+            this.BtnValidateSP.Name = "BtnValidateSP";
+            this.BtnValidateSP.Size = new System.Drawing.Size(200, 33);
+            this.BtnValidateSP.TabIndex = 8;
+            this.BtnValidateSP.Text = "Validate Service Plan";
+            this.BtnValidateSP.UseVisualStyleBackColor = true;
+            this.BtnValidateSP.Click += new System.EventHandler(this.BtnValidateSP_Click);
+            // 
             // btnCloneMenusToNewCycle
             // 
             this.btnCloneMenusToNewCycle.Location = new System.Drawing.Point(260, 3);
@@ -223,16 +233,6 @@
             this.btnUpdateMenuCode.UseVisualStyleBackColor = true;
             this.btnUpdateMenuCode.Click += new System.EventHandler(this.btnUpdateMenuCode_Click);
             // 
-            // BtnValidateSP
-            // 
-            this.BtnValidateSP.Location = new System.Drawing.Point(3, 3);
-            this.BtnValidateSP.Name = "BtnValidateSP";
-            this.BtnValidateSP.Size = new System.Drawing.Size(200, 33);
-            this.BtnValidateSP.TabIndex = 8;
-            this.BtnValidateSP.Text = "Validate Service Plan";
-            this.BtnValidateSP.UseVisualStyleBackColor = true;
-            this.BtnValidateSP.Click += new System.EventHandler(this.BtnValidateSP_Click);
-            // 
             // btnFlightSchedule
             // 
             this.btnFlightSchedule.Location = new System.Drawing.Point(3, 259);
@@ -257,7 +257,7 @@
             this.MinimumSize = new System.Drawing.Size(700, 700);
             this.Name = "Action";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Emma Management Tool";
+            this.Text = "Emma Admin Tool 2.0";
             this.grpBoxVAA.ResumeLayout(false);
             this.grpBoxVAA.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
