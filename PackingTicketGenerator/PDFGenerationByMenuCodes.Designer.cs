@@ -31,6 +31,7 @@
             this.lblMenucodes = new System.Windows.Forms.Label();
             this.richTextBoxMenucodes = new System.Windows.Forms.RichTextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblMenucodes
@@ -60,11 +61,21 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // lblHeader
+            // 
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.Location = new System.Drawing.Point(13, 9);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(309, 13);
+            this.lblHeader.TabIndex = 3;
+            this.lblHeader.Text = "Please enter comma separated menu codes for PDF generation:";
+            // 
             // PDFGenerationByMenuCodes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(522, 391);
+            this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.richTextBoxMenucodes);
             this.Controls.Add(this.lblMenucodes);
@@ -82,5 +93,6 @@
         private System.Windows.Forms.Label lblMenucodes;
         private System.Windows.Forms.RichTextBox richTextBoxMenucodes;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Label lblHeader;
     }
 }

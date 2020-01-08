@@ -39,12 +39,12 @@
             this.btnView = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.grpBoxVAA = new System.Windows.Forms.GroupBox();
-            this.btnGenerateUnOrderMenuPDFs = new System.Windows.Forms.Button();
-            this.btnCloneMenusToNewCycle = new System.Windows.Forms.Button();
-            this.btnUpdateMenuCode = new System.Windows.Forms.Button();
-            this.btnFlightSchedule = new System.Windows.Forms.Button();
-            this.BtnValidateSP = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnCloneMenusToNewCycle = new System.Windows.Forms.Button();
+            this.btnGenerateUnOrderMenuPDFs = new System.Windows.Forms.Button();
+            this.btnUpdateMenuCode = new System.Windows.Forms.Button();
+            this.BtnValidateSP = new System.Windows.Forms.Button();
+            this.btnFlightSchedule = new System.Windows.Forms.Button();
             this.grpBoxVAA.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +67,7 @@
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(3, 67);
+            this.btnGenerate.Location = new System.Drawing.Point(3, 195);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(200, 33);
             this.btnGenerate.TabIndex = 6;
@@ -89,7 +89,7 @@
             // 
             // btnGenerateOrderPDF
             // 
-            this.btnGenerateOrderPDF.Location = new System.Drawing.Point(260, 131);
+            this.btnGenerateOrderPDF.Location = new System.Drawing.Point(3, 67);
             this.btnGenerateOrderPDF.Name = "btnGenerateOrderPDF";
             this.btnGenerateOrderPDF.Size = new System.Drawing.Size(200, 33);
             this.btnGenerateOrderPDF.TabIndex = 3;
@@ -99,7 +99,7 @@
             // 
             // btnPackingLabels
             // 
-            this.btnPackingLabels.Location = new System.Drawing.Point(260, 3);
+            this.btnPackingLabels.Location = new System.Drawing.Point(260, 131);
             this.btnPackingLabels.Name = "btnPackingLabels";
             this.btnPackingLabels.Size = new System.Drawing.Size(200, 33);
             this.btnPackingLabels.TabIndex = 5;
@@ -109,7 +109,7 @@
             // 
             // btnGeneratePackingData
             // 
-            this.btnGeneratePackingData.Location = new System.Drawing.Point(3, 3);
+            this.btnGeneratePackingData.Location = new System.Drawing.Point(3, 131);
             this.btnGeneratePackingData.Name = "btnGeneratePackingData";
             this.btnGeneratePackingData.Size = new System.Drawing.Size(200, 33);
             this.btnGeneratePackingData.TabIndex = 4;
@@ -146,7 +146,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(200, 33);
             this.btnReset.TabIndex = 7;
-            this.btnReset.Text = "Reset";
+            this.btnReset.Text = "Clear";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -164,72 +164,22 @@
             this.grpBoxVAA.TabStop = false;
             this.grpBoxVAA.Text = "VAA Tasks";
             // 
-            // btnGenerateUnOrderMenuPDFs
-            // 
-            this.btnGenerateUnOrderMenuPDFs.Location = new System.Drawing.Point(260, 195);
-            this.btnGenerateUnOrderMenuPDFs.Name = "btnGenerateUnOrderMenuPDFs";
-            this.btnGenerateUnOrderMenuPDFs.Size = new System.Drawing.Size(200, 33);
-            this.btnGenerateUnOrderMenuPDFs.TabIndex = 12;
-            this.btnGenerateUnOrderMenuPDFs.Text = "UnOrdered Menu PDFs";
-            this.btnGenerateUnOrderMenuPDFs.UseVisualStyleBackColor = true;
-            this.btnGenerateUnOrderMenuPDFs.Click += new System.EventHandler(this.btnGenerateUnOrderMenuPDFs_Click);
-            // 
-            // btnCloneMenusToNewCycle
-            // 
-            this.btnCloneMenusToNewCycle.Location = new System.Drawing.Point(3, 259);
-            this.btnCloneMenusToNewCycle.Name = "btnCloneMenusToNewCycle";
-            this.btnCloneMenusToNewCycle.Size = new System.Drawing.Size(200, 33);
-            this.btnCloneMenusToNewCycle.TabIndex = 11;
-            this.btnCloneMenusToNewCycle.Text = "Clone Menus to New Cycle";
-            this.btnCloneMenusToNewCycle.UseVisualStyleBackColor = true;
-            this.btnCloneMenusToNewCycle.Click += new System.EventHandler(this.btnCloneMenusToNewCycle_Click);
-            // 
-            // btnUpdateMenuCode
-            // 
-            this.btnUpdateMenuCode.Location = new System.Drawing.Point(3, 195);
-            this.btnUpdateMenuCode.Name = "btnUpdateMenuCode";
-            this.btnUpdateMenuCode.Size = new System.Drawing.Size(200, 33);
-            this.btnUpdateMenuCode.TabIndex = 10;
-            this.btnUpdateMenuCode.Text = "Update Menucode in Chili";
-            this.btnUpdateMenuCode.UseVisualStyleBackColor = true;
-            this.btnUpdateMenuCode.Click += new System.EventHandler(this.btnUpdateMenuCode_Click);
-            // 
-            // btnFlightSchedule
-            // 
-            this.btnFlightSchedule.Location = new System.Drawing.Point(3, 131);
-            this.btnFlightSchedule.Name = "btnFlightSchedule";
-            this.btnFlightSchedule.Size = new System.Drawing.Size(200, 33);
-            this.btnFlightSchedule.TabIndex = 9;
-            this.btnFlightSchedule.Text = "Change Flight Schedule";
-            this.btnFlightSchedule.UseVisualStyleBackColor = true;
-            this.btnFlightSchedule.Click += new System.EventHandler(this.btnFlightSchedule_Click);
-            // 
-            // BtnValidateSP
-            // 
-            this.BtnValidateSP.Location = new System.Drawing.Point(260, 67);
-            this.BtnValidateSP.Name = "BtnValidateSP";
-            this.BtnValidateSP.Size = new System.Drawing.Size(200, 33);
-            this.BtnValidateSP.TabIndex = 8;
-            this.BtnValidateSP.Text = "Validate Service Plan";
-            this.BtnValidateSP.UseVisualStyleBackColor = true;
-            this.BtnValidateSP.Click += new System.EventHandler(this.BtnValidateSP_Click);
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.btnPackingLabels, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnCloneMenusToNewCycle, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.btnReset, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.btnGenerateUnOrderMenuPDFs, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnUpdateMenuCode, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnGeneratePackingData, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.BtnValidateSP, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnAddFlights, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btnGenerate, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnFlightSchedule, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnGenerateOrderPDF, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.BtnValidateSP, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnCloneMenusToNewCycle, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnGenerateOrderPDF, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnGenerateUnOrderMenuPDFs, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnGeneratePackingData, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnGenerate, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnPackingLabels, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnUpdateMenuCode, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnFlightSchedule, 0, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(73, 142);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
@@ -242,6 +192,56 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(514, 449);
             this.tableLayoutPanel1.TabIndex = 13;
+            // 
+            // btnCloneMenusToNewCycle
+            // 
+            this.btnCloneMenusToNewCycle.Location = new System.Drawing.Point(260, 3);
+            this.btnCloneMenusToNewCycle.Name = "btnCloneMenusToNewCycle";
+            this.btnCloneMenusToNewCycle.Size = new System.Drawing.Size(200, 33);
+            this.btnCloneMenusToNewCycle.TabIndex = 11;
+            this.btnCloneMenusToNewCycle.Text = "Clone Menus to New Cycle";
+            this.btnCloneMenusToNewCycle.UseVisualStyleBackColor = true;
+            this.btnCloneMenusToNewCycle.Click += new System.EventHandler(this.btnCloneMenusToNewCycle_Click);
+            // 
+            // btnGenerateUnOrderMenuPDFs
+            // 
+            this.btnGenerateUnOrderMenuPDFs.Location = new System.Drawing.Point(260, 67);
+            this.btnGenerateUnOrderMenuPDFs.Name = "btnGenerateUnOrderMenuPDFs";
+            this.btnGenerateUnOrderMenuPDFs.Size = new System.Drawing.Size(200, 33);
+            this.btnGenerateUnOrderMenuPDFs.TabIndex = 12;
+            this.btnGenerateUnOrderMenuPDFs.Text = "UnOrdered Menu PDFs";
+            this.btnGenerateUnOrderMenuPDFs.UseVisualStyleBackColor = true;
+            this.btnGenerateUnOrderMenuPDFs.Click += new System.EventHandler(this.btnGenerateUnOrderMenuPDFs_Click);
+            // 
+            // btnUpdateMenuCode
+            // 
+            this.btnUpdateMenuCode.Location = new System.Drawing.Point(260, 195);
+            this.btnUpdateMenuCode.Name = "btnUpdateMenuCode";
+            this.btnUpdateMenuCode.Size = new System.Drawing.Size(200, 33);
+            this.btnUpdateMenuCode.TabIndex = 10;
+            this.btnUpdateMenuCode.Text = "Update Menucode in Chili";
+            this.btnUpdateMenuCode.UseVisualStyleBackColor = true;
+            this.btnUpdateMenuCode.Click += new System.EventHandler(this.btnUpdateMenuCode_Click);
+            // 
+            // BtnValidateSP
+            // 
+            this.BtnValidateSP.Location = new System.Drawing.Point(3, 3);
+            this.BtnValidateSP.Name = "BtnValidateSP";
+            this.BtnValidateSP.Size = new System.Drawing.Size(200, 33);
+            this.BtnValidateSP.TabIndex = 8;
+            this.BtnValidateSP.Text = "Validate Service Plan";
+            this.BtnValidateSP.UseVisualStyleBackColor = true;
+            this.BtnValidateSP.Click += new System.EventHandler(this.BtnValidateSP_Click);
+            // 
+            // btnFlightSchedule
+            // 
+            this.btnFlightSchedule.Location = new System.Drawing.Point(3, 259);
+            this.btnFlightSchedule.Name = "btnFlightSchedule";
+            this.btnFlightSchedule.Size = new System.Drawing.Size(200, 33);
+            this.btnFlightSchedule.TabIndex = 9;
+            this.btnFlightSchedule.Text = "Change Flight Schedule";
+            this.btnFlightSchedule.UseVisualStyleBackColor = true;
+            this.btnFlightSchedule.Click += new System.EventHandler(this.btnFlightSchedule_Click);
             // 
             // Action
             // 

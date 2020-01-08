@@ -53,7 +53,7 @@
             // cmdFromCycle
             // 
             this.cmdFromCycle.FormattingEnabled = true;
-            this.cmdFromCycle.Location = new System.Drawing.Point(215, 38);
+            this.cmdFromCycle.Location = new System.Drawing.Point(254, 38);
             this.cmdFromCycle.Name = "cmdFromCycle";
             this.cmdFromCycle.Size = new System.Drawing.Size(244, 21);
             this.cmdFromCycle.TabIndex = 1;
@@ -83,7 +83,7 @@
             "10",
             "11",
             "12"});
-            this.cmbWeekNo.Location = new System.Drawing.Point(215, 129);
+            this.cmbWeekNo.Location = new System.Drawing.Point(254, 126);
             this.cmbWeekNo.Name = "cmbWeekNo";
             this.cmbWeekNo.Size = new System.Drawing.Size(244, 21);
             this.cmbWeekNo.TabIndex = 3;
@@ -100,7 +100,7 @@
             // cmbToCycle
             // 
             this.cmbToCycle.FormattingEnabled = true;
-            this.cmbToCycle.Location = new System.Drawing.Point(215, 82);
+            this.cmbToCycle.Location = new System.Drawing.Point(254, 82);
             this.cmbToCycle.Name = "cmbToCycle";
             this.cmbToCycle.Size = new System.Drawing.Size(244, 21);
             this.cmbToCycle.TabIndex = 5;
@@ -127,7 +127,7 @@
             // 
             // richTextBoxMenucodes
             // 
-            this.richTextBoxMenucodes.Location = new System.Drawing.Point(215, 197);
+            this.richTextBoxMenucodes.Location = new System.Drawing.Point(254, 194);
             this.richTextBoxMenucodes.Name = "richTextBoxMenucodes";
             this.richTextBoxMenucodes.Size = new System.Drawing.Size(354, 164);
             this.richTextBoxMenucodes.TabIndex = 8;
@@ -138,9 +138,9 @@
             this.lblMenucodes.AutoSize = true;
             this.lblMenucodes.Location = new System.Drawing.Point(73, 197);
             this.lblMenucodes.Name = "lblMenucodes";
-            this.lblMenucodes.Size = new System.Drawing.Size(63, 13);
+            this.lblMenucodes.Size = new System.Drawing.Size(153, 13);
             this.lblMenucodes.TabIndex = 9;
-            this.lblMenucodes.Text = "Menucodes";
+            this.lblMenucodes.Text = "Menucodes(comma seperated)";
             // 
             // labelOR
             // 
@@ -155,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 430);
+            this.ClientSize = new System.Drawing.Size(619, 430);
             this.Controls.Add(this.labelOR);
             this.Controls.Add(this.lblMenucodes);
             this.Controls.Add(this.richTextBoxMenucodes);
@@ -169,7 +169,8 @@
             this.Controls.Add(this.lblFromCycle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CloneMenus";
-            this.Text = "CloneMenus";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Clone Menus from one cycle to another cycle";
             this.Load += new System.EventHandler(this.CloneMenus_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
