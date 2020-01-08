@@ -61,7 +61,7 @@ namespace PDFProcessingVAA
                 if (string.IsNullOrEmpty(codes[i]))
                     continue;
 
-               // this.InvokeEx(f => f.lblStatus.Text = "PDFs generation in Progress for: " + codes[i]);
+                // this.InvokeEx(f => f.lblStatus.Text = "PDFs generation in Progress for: " + codes[i]);
 
 
                 var menudata = _menuManagement.GetMenuByMenuCode(codes[i].Trim());
@@ -77,7 +77,7 @@ namespace PDFProcessingVAA
 
             this.InvokeEx(f => f.lblStatus.Text = "PDFs generated successfully!");
 
-            Process.Start("explorer.exe", tempPath);
+            Process.Start(tempPath);
 
 
         }
