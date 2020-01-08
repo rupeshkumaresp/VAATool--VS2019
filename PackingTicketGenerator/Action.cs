@@ -168,7 +168,7 @@ namespace PackingTicketGenerator
                 return;
             }
 
-            var BoxReportPath = @"\\nas1\Digital_Production\Virgin\BoxReport\BoxReport_" + txtBoxOrderId.Text + ".xlsx";
+            var BoxReportPath = @"\\192.168.16.208\Digital_Production\Virgin\BoxReport\BoxReport_" + txtBoxOrderId.Text + ".xlsx";
 
             if (!File.Exists(BoxReportPath))
             {
@@ -202,7 +202,7 @@ namespace PackingTicketGenerator
             {
                 var order = txtBoxOrderId.Text.Trim();
 
-                var BoxReportPath = @"\\nas1\Digital_Production\Virgin\BoxReport\BoxReport_" + txtBoxOrderId.Text + ".xlsx";
+                var BoxReportPath = @"\\192.168.16.208\Digital_Production\Virgin\BoxReport\BoxReport_" + txtBoxOrderId.Text + ".xlsx";
 
                 ExcelRecordImporter importer = new ExcelRecordImporter(BoxReportPath);
 
@@ -288,9 +288,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "W MENU WK LHR";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -415,9 +415,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "J MENU WK LHR";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -566,9 +566,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "Y MENU WK LHR";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -773,9 +773,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "J MENU WK LGW";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -925,9 +925,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "Y MENU WK LGW";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -1133,9 +1133,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "W MENU WK LGW";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -1256,9 +1256,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "J MENU WK MAN";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -1408,9 +1408,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "W MENU WK MAN";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -1564,9 +1564,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "Y MENU WK MAN";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -1772,9 +1772,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "J MENU WK GLA";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -1922,9 +1922,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "W MENU WK GLA";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -2080,9 +2080,9 @@ namespace PackingTicketGenerator
 
                 blankLabelName = "Y MENU WK GLA";
 
-                var blankLabelPath = @"\\nas1\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
+                var blankLabelPath = @"\\192.168.16.208\Digital_Production\Virgin\PACKING LABELS BLANK TEMPLATE\" + blankLabelName + ".xlsx";
 
-                var blankLabelPathOrder = @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + OrderId;
+                var blankLabelPathOrder = @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + OrderId;
 
                 if (!Directory.Exists(blankLabelPathOrder))
                     Directory.CreateDirectory(blankLabelPathOrder);
@@ -2319,7 +2319,7 @@ namespace PackingTicketGenerator
                     //get the order Id of current row
                     var lotNo = orderManagement.GetLotNoFromOrderId(Convert.ToInt64(OrderId));
 
-                    var BoxReportPath = @"\\nas1\Digital_Production\Virgin\BoxReport\BoxReport_" + txtBoxOrderId.Text + ".xlsx";
+                    var BoxReportPath = @"\\192.168.16.208\Digital_Production\Virgin\BoxReport\BoxReport_" + txtBoxOrderId.Text + ".xlsx";
 
 
                     var boxTicketData = orderManagement.GetBoxTicketData(Convert.ToInt64(OrderId));
@@ -2369,18 +2369,18 @@ namespace PackingTicketGenerator
 
             if (viewText == "View Packing PDFs")
             {
-                Process.Start("explorer.exe", @"\\nas1\Digital_Production\Virgin\Emma\BoxTickets\Output\");
+                Process.Start("explorer.exe", @"\\192.168.16.208\Digital_Production\Virgin\Emma\BoxTickets\Output\");
             }
 
             if (viewText == "View PDFs")
             {
-                Process.Start("explorer.exe", @"\\nas1\Digital_Production\Virgin\Emma\MENU PDFS\" + txtBoxOrderId.Text);
+                Process.Start("explorer.exe", @"\\192.168.16.208\Digital_Production\Virgin\Emma\MENU PDFS\" + txtBoxOrderId.Text);
             }
 
             if (viewText == "View Packing Labels")
             {
 
-                Process.Start("explorer.exe", @"\\nas1\Digital_Production\Virgin\Packing Label Output\" + txtBoxOrderId.Text);
+                Process.Start("explorer.exe", @"\\192.168.16.208\Digital_Production\Virgin\Packing Label Output\" + txtBoxOrderId.Text);
 
             }
 

@@ -62,7 +62,7 @@ namespace PDFProcessingVAA
 
             var schedule = flightScheduleEngine.GetFlightSchedule();
 
-            GenerateOutputSpreadsheet.CreateFlightScheduleSpreadSheet(schedule, @"\\nas1\Digital_Production\Virgin\FlightSchedule");
+            GenerateOutputSpreadsheet.CreateFlightScheduleSpreadSheet(schedule, @"\\192.168.16.208\Digital_Production\Virgin\FlightSchedule");
 
             this.InvokeEx(f => f.btnDownloadSchedule.Enabled = true);
             this.InvokeEx(f => f.lblStatus.Visible = false);

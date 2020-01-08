@@ -202,7 +202,7 @@ namespace PDFProcessingVAA
 
 
 
-            Process.Start("explorer.exe", @"\\nas1\Digital_Production\Virgin\Emma\MENU PDFS\" + txtBoxOrderId.Text);
+            Process.Start("explorer.exe", @"\\192.168.16.208\Digital_Production\Virgin\Emma\MENU PDFS\" + txtBoxOrderId.Text);
 
 
         }
